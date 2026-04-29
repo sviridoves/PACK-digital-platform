@@ -434,6 +434,8 @@ erDiagram
 
 **Связи кросс-БД:** события из `#6 learning`, `#9 publication`, `#11 lead` могут проецироваться как `EVENT` в `#2 journal` через outbox-pattern (для единой ленты действий пользователя).
 
+**Migrated 2026-04-29 (WP-268 Phase 3 Block 2):** legacy таблицы `qa_history` (1064 rows, PII Q&A текст) + `feedback_triage` (FK к qa_history, 0 rows на момент cut-over) перенесены из `platform.public` в `journal.public`. Бот (`aist_pilot_me`/`aist_me_bot`) пишет/читает через `JOURNAL_URL` env + `get_journal_pool()`. **Tech debt:** структура qa_history/feedback_triage остаётся «как было» (не нормализована в `EVENT`/`ACTION_CONTEXT` модель §3.2 ER). Нормализация — отдельный РП после стабилизации (≥W19), приоритет средний.
+
 ### 3.3 #3 payment — Платёж
 
 **Категория WP-257:** Память.Observed. **Writers:** billing-webhook (ЮKassa, Telegram Stars), админ через Directus, payout-engine (расщепление входящих платежей на доли получателей + исходящие выплаты). **Owner:** Neon.
