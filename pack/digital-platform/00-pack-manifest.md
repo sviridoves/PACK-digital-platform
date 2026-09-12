@@ -1,7 +1,7 @@
 Domain: DP
-Pack directory: /Users/tserentserenov/IWE/PACK-digital-platform/pack/digital-platform
-MAP written to: /Users/tserentserenov/IWE/PACK-digital-platform/pack/digital-platform/07-map/DP.MAP.001.md
-Manifest updated: /Users/tserentserenov/IWE/PACK-digital-platform/pack/digital-platform/00-pack-manifest.md
+Pack directory: pack/digital-platform
+MAP written to: pack/digital-platform/07-map/DP.MAP.001.md
+Manifest updated: pack/digital-platform/00-pack-manifest.md
 ## Entity Index
 
 | ID | Name | Kind | Summary | Status |
