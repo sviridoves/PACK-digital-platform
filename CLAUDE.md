@@ -1,6 +1,6 @@
 # CLAUDE.md — PACK-digital-platform
 
-> **Общие инструкции:** см. `/Users/tserentserenov/IWE/CLAUDE.md`
+> **Общие инструкции:** см. `{{WORKSPACE_DIR}}/CLAUDE.md`
 >
 > Этот файл содержит только специфику данного репозитория.
 
@@ -20,9 +20,9 @@
 1. Этот Pack (предметное знание)
    └── pack/digital-platform/
 2. SPF (форма и процесс)
-   └── ~/IWE/SPF/
+   └── ../SPF/
 3. FPF (первые принципы) — только если нет в SPF
-   └── ~/IWE/FPF/FPF-Spec.md
+   └── ../FPF/FPF-Spec.md
 ```
 
 **Правило:** Если чего-то нет на текущем уровне — смотри выше.
